@@ -4,7 +4,7 @@
 
 This will build the Java executable Jar in the backend/target directory. 
 
-``mvn clean install``
+``mvn package``
 
 You can run the jar as shown below.
 
@@ -16,6 +16,9 @@ You can view the application by firing up your browser
 
 ``http://localhost:8080``
 
-Via Restful API
+Using Restful API
 
-``curl -i -X POST -H "Content-Type: application/json" -d '{"text":"EngIneerIng"}' localhost:8080/counter``
+``curl localhost:8080/counter?text=EngIneerIng``
+
+
+``curl -X POST -d '{"text":"EngIneerIng"}' localhost:8080/counter``
