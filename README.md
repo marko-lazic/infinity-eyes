@@ -1,8 +1,8 @@
-# InfinityEyes I Counter
+# InfinityEyes counting I's web app
 
 ## Build
 
-This will build the Java executable Jar in the backend/target directory. 
+This will build the Java executable Jar in the target directory. 
 
 ``mvn package``
 

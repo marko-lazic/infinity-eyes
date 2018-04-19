@@ -1,0 +1,15 @@
+* {
+  font-family: "Courier New";
+  align-content: center;
+
+  margin: auto;
+  padding: 10px;
+}
+
+.container {
+  padding-top: 10%;
+}
+
+.input {
+  width: 80%;
+}
