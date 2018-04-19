@@ -4,14 +4,13 @@
 
 ## Project struture
 ```
-├── src
-│   ├── main
-│   │   ├── java
-│   │   ├── resources
-│   │   └── ui
-│   └── test
-│       └── java
-└── target
+src
+├── main
+│   ├── java
+│   ├── resources
+│   └── ui
+└── test
+    └── java
 ```
 
 ## Build
