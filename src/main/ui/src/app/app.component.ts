@@ -14,7 +14,11 @@ export class AppComponent {
 
   onKey(event: any) {
     this.http.post('/counter', {'text': event.target.value})
-      .subscribe(data =>
-        this.result = "We counted " + data.toString() + " character I's for You.");
+      .subscribe(data => {
+        if (event.target.value.length != 0)
+          this.result = "We counted " + data.toString() + " character I's for You.";
+        else
+          this.result = "";
+      });
   }
 }
