@@ -6,6 +6,13 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * CountingController.java
+ * Purpose: Routes API calls.
+ *
+ * @author Marko Lazic
+ * @version 1.0 4/19/18
+ */
 @RestController
 public class CountingController {
 
@@ -19,12 +26,7 @@ public class CountingController {
     }
 
     @RequestMapping("/counter")
-    public String sayHello(@RequestParam(name="text", required=false, defaultValue="") String text) {
+    public String retrieveCount(@RequestParam(name = "text", required = false, defaultValue = "") String text) {
         return Integer.toString(countingService.count(text));
-    }
-
-    @RequestMapping("/about")
-    String hello() {
-        return "InfinityEyes d.o.o.";
     }
 }
